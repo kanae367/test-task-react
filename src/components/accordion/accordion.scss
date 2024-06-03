@@ -22,6 +22,7 @@
     max-width: 430px;
     margin-bottom: 15px;
     position: relative;
+    margin-top: 0;
 
     &::after{
         position: absolute;
@@ -34,4 +35,9 @@
     font-size: 16px;
     color: #2E3A59;
     margin-bottom: 21px;
+}
+
+.accordion__container{
+    width: 100%;
+    max-width: 704px;
 }

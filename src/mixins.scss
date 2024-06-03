@@ -17,8 +17,11 @@
     }
 
     @media screen and (max-width: 1023px) {
+        font-size: 24px;
+        
         &::after {
             content: unset;
+            bottom: calc(100% + 16px);
         }
     }
 }
