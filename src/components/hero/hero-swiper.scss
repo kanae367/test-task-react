@@ -23,6 +23,7 @@
     background-color: transparent;
     border: unset;
     transition: opacity 0.2s;
+    cursor: pointer;
     
     &:last-child{
         rotate: 180deg;

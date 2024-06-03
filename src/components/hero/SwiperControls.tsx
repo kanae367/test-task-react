@@ -28,7 +28,7 @@ function SwiperControls(){
                 </svg>
             </button>
             {
-                swiper.slides.map((item, index) => <button onClick={() => handleSlideTo(index)} className={`swiper__pagination-button ${activeIndex === index ? 'swiper__pagination-button_active' : ''}`} key={index}></button>)
+                swiper.slides.map((item, index) => <button onClick={() => handleSlideTo(index)} className={`swiper__pagination-button ${activeIndex === index ? 'swiper__pagination-button_active' : ''}`} key={item && index}></button>)
             }
             <button className="swiper__button" onClick={handleNextClick} disabled={activeIndex === swiper.slides.length - 1}>
                 <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
