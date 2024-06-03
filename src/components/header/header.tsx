@@ -1,4 +1,3 @@
-import Link from "next/link";
 import './header.scss';
 
 const testNav = ["NavItem1", "NavItem2", "NavItem3"];
@@ -14,7 +13,7 @@ function Header(){
             </svg>
             <nav className="header__nav">
                 {
-                    testNav.map(item => <Link className="header__nav-item" key={item} href={item}>{item}</Link>)
+                    testNav.map(item => <a className="header__nav-item" key={item} href={item}>{item}</a>)
                 }
             </nav>
             <button type="button" className="header__button">Button</button>

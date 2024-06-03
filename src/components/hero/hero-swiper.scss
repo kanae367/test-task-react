@@ -1,0 +1,34 @@
+.swiper__navigation{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+    gap: 16px;
+    margin-top: 63px;
+}
+
+.swiper__pagination-button{
+    width: 8px;
+    height: 8px;
+    background-color: #E7EBF0;
+    border-radius: 50%;
+    border: none;
+
+    &_active{
+        background-color: #A6ABBD;
+    }
+}
+
+.swiper__button{
+    background-color: transparent;
+    border: unset;
+    transition: opacity 0.2s;
+    
+    &:last-child{
+        rotate: 180deg;
+    }
+
+    &:disabled{
+        opacity: 0.5;
+    }
+}
