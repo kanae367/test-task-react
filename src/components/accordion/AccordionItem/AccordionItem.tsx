@@ -9,7 +9,7 @@ function AccordionItem({title, icon, content, isActive, setActive}: {
     setActive(): void;
 }){
     return(
-        <div className={`${classes.item} ${isActive ? classes.active : ''}`} onClick={setActive}>
+        <div className={`${classes.item} ${isActive && classes.active}`} onClick={setActive}>
             <div className={classes.top}>
                 <div className={classes["icon-container"]}>
                     <img className={classes.icon} src={'/accordion' +icon} alt="" />

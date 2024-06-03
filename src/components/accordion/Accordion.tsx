@@ -45,8 +45,9 @@ function Accordion(){
             <p className='accordion__subtitle'>Porro ab rerum omnis magnam eligendi error nobis dolore?</p>
             <div className='accordion__container'>
                 {
+                    //key должен быть уникальным и, желательно, не index
                     data.map((item, index) => <AccordionItem 
-                        key={item.title} 
+                        key={index} 
                         title={item.title} 
                         icon={item.icon} 
                         content={item.content}
