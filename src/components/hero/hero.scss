@@ -10,7 +10,6 @@
     align-items: center;
     grid-area: hero;
     position: relative;
-    overflow: hidden;
 
     @media screen and (max-width: 1023px) {
         background-image: unset;
@@ -148,6 +147,7 @@
     position: absolute;
     inset: 0;
     display: flex;
+    overflow: hidden;
 }
 
 .parallax-image{
