@@ -112,6 +112,10 @@
     }
 }
 
+.reviews__item-image{
+    filter: drop-shadow(0 8px 15px rgba(black, 0.5));
+}
+
 .reviews__item-text{
     line-height: 1.5;
     margin: 0;
@@ -121,4 +125,47 @@
     display: block;
     margin-top: 20px;
     font-weight: 700;
+}
+
+.reviews__item-content{
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+        position: static;
+    }
+}
+
+.reviews__item-quotes{
+    position: absolute;
+    display: flex;
+    gap: 1px;
+
+    &:first-child{
+        right: calc(100% + 17px);
+    }
+
+    &:last-child{
+        right: -20px;
+        bottom: 0;
+        transform: translateY(50%) rotate(180deg);
+    }
+
+    @media screen and (max-width: 767px) {
+        top: 24px;
+
+        path{
+            fill: #E7EBF0;
+        }
+
+        &:first-child{
+            left: 16px;
+            right: unset;
+        }
+
+        &:last-child{
+            right: 16px;
+            bottom: unset;
+            transform: rotate(180deg);
+        }
+    }
 }

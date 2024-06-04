@@ -1,4 +1,5 @@
 import './reviews.scss';
+import QuoteIcons from './icons/QuoteIcon';
 
 function Reviews(){
     return(
@@ -8,8 +9,10 @@ function Reviews(){
                 <div className='reviews__item'>
                     <img className='reviews__item-image' src="/reviews/photo.png" alt="Фото автора" />
                     <div className='reviews__item-content'>
+                        <QuoteIcons/>
                         <p className='reviews__item-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi expedita, provident excepturi officia! Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore?</p>
                         <span className='reviews__item-author'>Jana Doe</span>
+                        <QuoteIcons/>
                     </div>
                 </div>
                 
