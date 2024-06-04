@@ -2,6 +2,7 @@
     display: grid;
     grid-template-areas: 'hero hero' 'reviews accordion';
     grid-template-columns: 1fr 1fr;
+    color: #2E3A59;
 
     @media screen and (max-width: 1439px) {
         display: block;

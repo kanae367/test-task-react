@@ -1,4 +1,4 @@
-// стили написаны через css modules, чтобы показать технологию 
+// стили написаны через css modules, чтобы показать работу с технологией 
 
 .item{
     width: 100%;
@@ -16,7 +16,6 @@
     }
 
     @media screen and (max-width: 1023px) {
-        width: 100%;
         max-width: 604px;
     }
 }
@@ -37,7 +36,7 @@
 
 .top{
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 .icon-container{
@@ -63,8 +62,10 @@
 .title{
     font-size: 24px;
     font-weight: 700;
-    color: #2E3A59;
+    margin: 0;
     margin-right: auto;
+    max-width: 80%;
+    align-self: center;
 
     @media screen and (max-width: 1023px) {
         font-size: 16px;
@@ -73,11 +74,17 @@
 
 .arrow{
     rotate: -90deg;
+    margin-top: 7px;
+
+    @media screen and (max-width: 1023px) {
+        margin-top: 0;
+    }
 }
 
 .bottom{
     display: none;
     padding-left: 64px;
+    margin-top: 10px;
 
     @media screen and (max-width: 1023px) {
         padding-left: 0;
