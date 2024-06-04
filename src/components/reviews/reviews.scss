@@ -11,6 +11,13 @@
 
     @media screen and (max-width: 1023px) {
         background-color: #FFFFFF;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    
+    @media screen and (max-width: 767px) {
+        max-width: 500px;
+        margin: 0 auto;
         padding: 47px 15px;
     }
 }
@@ -36,7 +43,7 @@
     column-gap: 20px;
     grid-template-areas: 'first first' 'second third';
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 767px) {
         display: block;
     }
 }
@@ -50,7 +57,7 @@
         grid-area: first;
         gap: 71px;
 
-        @media screen and (max-width: 1023px) {
+        @media screen and (max-width: 767px) {
             width: 100%;
             border-radius: 32px;
             flex-direction: column;
@@ -68,7 +75,7 @@
             height: 187px;
             object-fit: cover;
             
-            @media screen and (max-width: 1023px) {
+            @media screen and (max-width: 767px) {
                 position: absolute;
                 left: 50%;
                 top: 0;
@@ -83,7 +90,7 @@
         grid-area: second;
         flex-direction: row-reverse;
 
-        @media screen and (max-width: 1023px) {
+        @media screen and (max-width: 767px) {
             flex-direction: row;
             margin-bottom: 26px;
         }
@@ -92,7 +99,7 @@
     &:last-child{
         grid-area: third;
 
-        @media screen and (max-width: 1023px) {
+        @media screen and (max-width: 767px) {
             flex-direction: row-reverse;
         }
     }

@@ -1,5 +1,5 @@
 .item{
-    width: 704px;
+    width: 100%;
     position: relative;
     margin-bottom: 23px;
 
@@ -16,11 +16,6 @@
     @media screen and (max-width: 1023px) {
         width: 100%;
         max-width: 604px;
-
-        &:last-child{
-            padding-bottom: 30px;
-            // margin-bottom: 0;
-        }
     }
 }
 
@@ -80,4 +75,9 @@
 
 .bottom{
     display: none;
+    padding-left: 64px;
+
+    @media screen and (max-width: 1023px) {
+        padding-left: 0;
+    }
 }

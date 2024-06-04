@@ -3,7 +3,7 @@
     grid-template-areas: 'hero hero' 'reviews accordion';
     grid-template-columns: 1fr 1fr;
 
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 1439px) {
         display: block;
     }
 }
