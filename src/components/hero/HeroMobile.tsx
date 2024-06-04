@@ -6,7 +6,7 @@ import './hero-swiper.scss';
 function HeroMobile(){
     return(
         <>
-        <img width={218} height={115} className="hero__content-image" src="/berry.png" alt="Ягоды" />
+        <img width={218} height={115} className="hero__content-image" src="/berry.webp" alt="Ягоды" />
             <h1 className="hero__title">Lorem ipsum, dolor sit amet consectetur </h1>
             <Swiper
             className='wrapper'

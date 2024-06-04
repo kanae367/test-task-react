@@ -66,7 +66,7 @@ function HeroDesktop(){
             <p className="hero__content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="hero__content-item hero__content-item_berry">
-              <img width={436} height={230} className="hero__content-image" src="/berry.png" alt="Ягоды" />
+              <img width={436} height={230} className="hero__content-image" src="/berry.webp" alt="Ягоды" />
           </div>
         </div>
         </>
