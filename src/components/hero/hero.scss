@@ -1,7 +1,7 @@
 @import '../../mixins.scss';
 
 .hero{
-    background-image: url('/background.webp');
+    background-image: linear-gradient(to right, #E2E2E2, #FFFFFF);
     background-size: cover;
     padding-top: 101px;
     padding-bottom: 93px;
@@ -9,7 +9,8 @@
     flex-direction: column;
     align-items: center;
     grid-area: hero;
-
+    position: relative;
+    overflow: hidden;
 
     @media screen and (max-width: 1023px) {
         background-image: unset;
@@ -94,6 +95,8 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        position: relative;
+        z-index: 5;
 
         @media screen and (max-width: 1023px) {
             padding: 0 50px;
@@ -139,4 +142,32 @@
 
 .wrapper {
     width: 100%;
+}
+
+.parallax-container{
+    position: absolute;
+    inset: 0;
+    display: flex;
+}
+
+.parallax-image{
+    width: 580px;
+    height: 580px;
+}
+
+.parallax-item:first-child{
+    margin-top: 350px;
+    
+    .parallax-image{
+        rotate: -55deg;
+    }
+}
+
+.parallax-item:last-child{
+    margin-left: auto;
+    margin-top: 100px;
+    
+    .parallax-image{
+        rotate: -135deg;
+    }
 }
