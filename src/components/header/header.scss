@@ -5,11 +5,18 @@
     padding-top: 30px;
     padding-bottom: 37px;
 
+
+    
     @media screen and (max-width: 1150px) {
         padding-left: 57px;
         padding-right: 57px;
         padding-top: 11px;
         padding-bottom: 64px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1150px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     
     &__nav{
