@@ -5,16 +5,26 @@ function SwiperControls(){
     const swiper = useSwiper();
     const [activeIndex, setActiveIndex] = useState(swiper.activeIndex);
 
+    /**
+     * Перелистывает на следующий слайд. Меняет стейт, чтобы вызвать ререндер кнопок пагинации с корректными классами 
+     */
     const handleNextClick = () => {
         setActiveIndex(activeIndex + 1);
         swiper.slideNext();
     }
 
+    /**
+     * Перелистывает на предыдущий слайд. Меняет стейт, чтобы вызвать ререндер кнопок пагинации с корректными классами 
+     */
     const handlePrevClick = () => {
         setActiveIndex(activeIndex - 1);
         swiper.slidePrev();
     }
 
+    /**
+     * Перелистывает на выбранный слайд. Меняет стейт, чтобы вызвать ререндер кнопок пагинации с корректными классами 
+     * @param index индекс выбранного слайда
+     */
     const handleSlideTo = (index: number) => {
         setActiveIndex(index);
         swiper.slideTo(index);
