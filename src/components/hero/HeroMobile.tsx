@@ -36,8 +36,9 @@ function HeroMobile(){
                   </SwiperSlide>
                   <SwiperSlide className="hero__content-item">
                     <HeadphonesIcon/>
-                    <p className="hero__content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></SwiperSlide>
-                <SwiperControls/>
+                    <p className="hero__content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  </SwiperSlide>
+                <SwiperControls array={[1,2,3,4,5]}/>
             </Swiper>
             </>
     )

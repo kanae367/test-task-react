@@ -25,10 +25,6 @@
     border: unset;
     transition: opacity 0.2s;
     cursor: pointer;
-    
-    &:last-child{
-        rotate: 180deg;
-    }
 
     &:disabled{
         opacity: 0.5;
